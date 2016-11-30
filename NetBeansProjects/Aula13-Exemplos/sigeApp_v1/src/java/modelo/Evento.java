@@ -5,7 +5,6 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -25,9 +24,6 @@ public class Evento implements Serializable {
     
     @Temporal(TemporalType.DATE)
     private Date dataEvento;
-    
-    @ManyToMany
-    private Usuario usuario;
 
     public int getId() {
         return id;
@@ -83,14 +79,6 @@ public class Evento implements Serializable {
 
     public void setDataEvento(Date dataEvento) {
         this.dataEvento = dataEvento;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
     }
     
 }

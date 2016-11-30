@@ -15,9 +15,6 @@ public class EventoDAO {
     public void salvar(Evento e) {
         sessao.saveOrUpdate(e);
     }
-   // public void editar(){
-   //     sessao.addEventListeners(Evento.class.toString().);
-   // }
     
     public Evento carregar(int id) {
         return (Evento) sessao.load(Evento.class, id);

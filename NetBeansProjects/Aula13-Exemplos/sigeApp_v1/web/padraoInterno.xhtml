@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title><ui:insert name="titulo">Sistema de Eventos</ui:insert></title>
+    </h:head>        
+    <h:body>
+        <p:layout fullPage="true">
+            <p:layoutUnit position="north" size="150">
+                <div style="background-color:#00BFFF;text-align:center;position:absolute; width:100%;height:100%;z-index:1">
+                    <h1>Sistema de Eventos</h1>
+                    <p> Olá #{loginBean.usuario.nome} </p>
+                </div> 
+            </p:layoutUnit>
+            
+            
+            <p:layoutUnit position="center" style="text-align: center">
+                <p:messages/>
+                <h:form><br/><br/><br/>
+                    <p:commandButton ajax="false" value="Cadastrar Evento | Palestrantes" action="cadastroEvento"/>
+                    <p:commandButton ajax="false" value="Inscrever-se em Evento | Participantes" action="consultaEventos1_1"/><br/><br/><br/><br/><br/><br/>
+                    <p:commandButton ajax="false" value="Sair" action="index"/>
+                </h:form>
+
+            </p:layoutUnit>
+            <p:layoutUnit position="south" size="70">
+                <div style="background-color:#00BFFF;text-align:center;position:absolute; width:100%;height:100%;z-index:1">
+                    <p>Rodapé</p>
+                </div> 
+            </p:layoutUnit>
+        </p:layout>
+    </h:body>
+</html>
