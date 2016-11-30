@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="horizontal"
+    tools:context="com.example.ti.final_mapa.Principal_Mapa"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/ID_banner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:text="Atual..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:text="Conve.." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:text="Apaga.." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:text="Conf" />
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/IDtabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ID_banner"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Base.TextAppearance.AppCompat"
+                android:background="@color/bg_main">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/content_um"></include>
+                <include layout="@layout/content_dois"></include>
+                <include layout="@layout/content_tres"></include>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>
