@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Principal_Mapa"
+            android:name=".beans.Principal_Mapa"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_principal__mapa">
 
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".beans.Login"
             android:label="Casual"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -29,11 +29,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RedefinirSenha"
+            android:name=".beans.RedefinirSenha"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Cadastro"
+            android:name=".beans.Cadastro"
             android:label="@string/title_activity_cadastro"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

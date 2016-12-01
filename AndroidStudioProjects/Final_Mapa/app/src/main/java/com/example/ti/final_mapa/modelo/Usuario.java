@@ -1,4 +1,4 @@
-package com.example.ti.final_mapa;
+package com.example.ti.final_mapa.modelo;
 
 import android.content.Context;
 

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ti.final_mapa.modelo.Usuario;
+
 import java.util.List;
 
 /**

@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:id="@+id/tab1"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.ti.final_mapa.Principal_Mapa">
+    tools:context="com.example.ti.final_mapa.beans.Principal_Mapa">
 
     <TextView
-        android:text="Tab 1"
+        android:text="Conversas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/IDtextView1" />

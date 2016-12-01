@@ -1,4 +1,4 @@
-package com.example.ti.final_mapa;
+package com.example.ti.final_mapa.beans;
 
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -17,6 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.ti.final_mapa.R;
+import com.example.ti.final_mapa.modelo.Usuario;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;

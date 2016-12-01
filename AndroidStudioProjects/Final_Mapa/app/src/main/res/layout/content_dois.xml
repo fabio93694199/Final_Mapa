@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/tab2"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.ti.final_mapa.Principal_Mapa"
+    tools:context="com.example.ti.final_mapa.beans.Principal_Mapa"
     android:weightSum="1">
 
         <android.support.v7.widget.RecyclerView

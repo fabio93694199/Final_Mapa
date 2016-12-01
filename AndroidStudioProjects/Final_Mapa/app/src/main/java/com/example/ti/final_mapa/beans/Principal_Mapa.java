@@ -1,19 +1,19 @@
-package com.example.ti.final_mapa;
+package com.example.ti.final_mapa.beans;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TabHost;
 import android.widget.Toast;
 
+import com.example.ti.final_mapa.AdaptadorDeUsuarios;
+import com.example.ti.final_mapa.R;
+import com.example.ti.final_mapa.modelo.Usuario;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
@@ -35,8 +35,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 
 public class Principal_Mapa extends FragmentActivity implements OnMapReadyCallback {
 
